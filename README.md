@@ -1,10 +1,5 @@
-- 👋 Hi, I’m @Reverse87
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-Reverse87/Reverse87 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- 👋 Hi, I’m @Reverse87, more called @Reverse88 everywhere in Inthernet.
+- 👀 I’m interested in sharing all my knows about Minecraft and Astroneer as a fandom Wiki-Editor.
+- 🌱 I’m currently learning in the Python coding, and some anothers languages.
+- 💞️ I’m looking to collaborate on editing some wikis for various video-games, such as Minecraft. I'm also an active Spanish translator.
+- 📫 You can reach my by my discord gamer-tag (Reverse88#9077).
