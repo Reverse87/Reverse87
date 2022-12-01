@@ -19,8 +19,9 @@ score = 0
 def main_loop():
     while openedWindow == True:
         move_bus()
+        move_ground()
         screen.update()
-        time.sleep(1)
+        time.sleep(60)
         if openedWindow == True:
             gameOver
 leftKey = 0
@@ -47,9 +48,9 @@ def move_bus():
 mouvLines = 4
 mouvBackground = 4
 defOverBus = canvasHeight
-defUnderBus = canvasHeight
+defUnderBus = canvasHeight-1440
 def move_ground():
-    global mouvLines, mouvBalleY, score, speedBus
+    global mouvLines, mouvBackground, score, speedBus
     (groundLeft, overGround, underGround, groundRight) = canvas.coords(lines, background)
     if mouvLines > 0 and busRight > canvasWidth:
         mouvLines = -mouvLines
@@ -57,12 +58,12 @@ def move_ground():
         mouvBackground = -mouvLines
     if mouvBackground < 0 and OverBus < 0:
         mouvBackground = -mouvBackground
-    if mouvBackground > 0 and underBus > defOverBus and basBalle < defUnderBus:
+    if mouvBackground > 0 and underBus > defOverBus and OverBus < defUnderBus:
         (busLeft, OverBus, busRight, UnderBus) = canvas.coords(bus)
-        if (mouvLines > 0 and (busRight+mouvLines > gaucheRaquette
+        if (mouvLines > 0 and (busRight+mouvLines > busLeft
         and busLeft < busRight) or mouvLines < 0
         and (busRight > busLeft and busLeft+mouvLines < busRight)):
-            mouvBalleY = -mouvBalleY
+            mouvBackground = -mouvBackground
             score = score + 1
             canvas.move(bus, mouvLines, mouvBackground)
 def gameOver():
@@ -73,16 +74,6 @@ def gameOver():
     elif bus_anim == 420:
         openedWindow == False
         screen.destroy()
-def score(event):
-    global score
-    global leftKey, rightKey
-    score = score + 1
-    if score == 1:
-        print("1 m")
-    elif score == 2:
-        print("2 m")
-    else:
-        print(score, "m")
 def close():
     global openedWindow
     openedWindow = False
