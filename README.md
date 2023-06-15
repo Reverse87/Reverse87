@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Reverse87, more called @Reverse88 everywhere in Inthernet.
+- 👋 Hi, I’m @Reverse87, more called @Reverse88 everywhere in Internet.
 - 👀 I’m interested in sharing all my knows about Minecraft and Astroneer as a fandom Wiki-Editor.
 - 🌱 I’m currently learning in the Python coding, and some anothers languages.
 - 💞️ I’m looking to collaborate on editing some wikis for various video-games, such as Minecraft. I'm also an active Spanish translator.
